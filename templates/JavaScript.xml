@@ -1,0 +1,67 @@
+<templateSet group="JavaScript">
+  <template name="clg" value="console.log('$END$');" description="Log a message" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+    </context>
+  </template>
+  <template name="clgo" value="console.log('$VALUE$:', $VALUE$);" description="Log an object" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+    </context>
+  </template>
+  <template name="clgv" value="console.log(`$VALUE$ = ${$VALUE$}`);" description="Log a value" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+    </context>
+  </template>
+  <template name="asts" value="await new Promise(resolve =&gt; this.setState({ $PROP$: $VALUE$ }, resolve);" description="Asyncronously setState" toReformat="false" toShortenFQNames="true">
+    <variable name="PROP" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="comp" value="import { React, PropTypes, Component, component, str, cx } from 'base';&#10;import styles from './$COMPNAME$.scss';&#10;&#10;const { string, number, bool, array } = PropTypes;&#10;&#10;@component({ styles })&#10;export class $COMPNAME$ extends Component {&#10;  static propTypes = {&#10;    className: string&#10;  };&#10;&#10;  constructor(props) {&#10;    super(props);&#10;&#10;    $END$&#10;  }&#10;&#10;  render() {&#10;    return (&#10;      &lt;div styleName={cx('main')}&gt;My awesome new react component $COMPNAME$&lt;/div&gt;&#10;    );&#10;  }&#10;}&#10;&#10;export default $COMPNAME$;&#10;" description="New React component" toReformat="true" toShortenFQNames="true">
+    <variable name="COMPNAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="qs" value="document.querySelector('$SEL$');$END$" description="Query selector shortcut" toReformat="true" toShortenFQNames="true">
+    <variable name="SEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="qsa" value="document.querySelectorAll('$SEL$');$END$" description="Query selector all shortcut" toReformat="true" toShortenFQNames="true">
+    <variable name="SEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="importitems" value="import { $ITEM$$END$ } from '$MODULE$';&#10;" description="Import statement - import {b} from 'a'" toReformat="false" toShortenFQNames="true">
+    <variable name="MODULE" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="importns" value="import * as $ITEM$ from '$MODULE$';&#10;$END$" description="Import statement - import * as b from 'a'" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM" expression="jsSuggestImportedEntityName()" defaultValue="Namespace" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="importdefault" value="import $ITEM$ from '$MODULE$';&#10;$END$" description="Import statement - import b from 'a'" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM" expression="jsSuggestImportedEntityName()" defaultValue="Namespace" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="rctor" value="constructor(props) {&#10;    super(props);&#10;&#10;    this.state = {$END$};&#10;}" description="React constructor" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_CLASS" value="true" />
+    </context>
+  </template>
+</templateSet>

@@ -1,0 +1,37 @@
+<application>
+  <component name="FindSettings">
+    <option name="customScope" value="all-client-src" />
+    <option name="defaultScopeName" value="all-client-src" />
+    <option name="SEARCH_SCOPE" value="all-client-src" />
+    <mask>*.as</mask>
+    <mask>*.mxml</mask>
+    <mask>*.jspf</mask>
+    <mask>*.java</mask>
+    <mask>*.test.js</mask>
+    <mask>*.css</mask>
+    <mask>*gradle</mask>
+    <mask>*.jsp</mask>
+    <mask>one*.scss</mask>
+    <mask>*.properties</mask>
+    <mask>*-test.js</mask>
+    <mask>*test.js*</mask>
+    <mask>*test.js</mask>
+    <mask>index*.js</mask>
+    <mask>*Content*.jsx</mask>
+    <mask>ed.*fw*.js</mask>
+    <mask>*native*.js</mask>
+    <mask>*service.js</mask>
+    <mask>*rte*.js</mask>
+    <mask>.gitignore</mask>
+    <mask>*.sh</mask>
+    <mask>*build*</mask>
+    <mask>*README*.*</mask>
+    <mask>*.prop*</mask>
+    <mask>*.*css</mask>
+    <mask>*.scss</mask>
+    <mask>*.jsx</mask>
+    <mask>*.js</mask>
+    <mask>*.jsp*</mask>
+    <mask>*.js*</mask>
+  </component>
+</application>

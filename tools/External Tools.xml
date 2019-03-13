@@ -1,0 +1,9 @@
+<toolSet name="External Tools">
+  <tool name="local test" description="Run tests of current file" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="npm" />
+      <option name="PARAMETERS" value="run test:watch $FileNameWithoutExtension$ -- --fullReport" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/../DudaRoot/client/src" />
+    </exec>
+  </tool>
+</toolSet>

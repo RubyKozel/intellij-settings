@@ -1,0 +1,46 @@
+<templateSet group="Mocha test framework">
+  <template name="it" value="it('should $STATE$', $ASYNC$() =&gt; {&#10;    $END$&#10;});" description="Mocha 'it' state in test" toReformat="false" toShortenFQNames="true">
+    <variable name="STATE" expression="" defaultValue="&quot;do this to that&quot;" alwaysStopAt="true" />
+    <variable name="ASYNC" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="false" />
+      <option name="JADE" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="desc" value="describe('$TESTNAME$', () =&gt; {&#10;    $END$&#10;});" description="Mocha 'describe' function" toReformat="false" toShortenFQNames="true">
+    <variable name="TESTNAME" expression="" defaultValue="&quot;New test&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="false" />
+      <option name="JADE" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="setup" value="let $SPY$;&#10;&#10;beforeEach(() =&gt; {&#10;  $SPY$ = sinon.spy($SPY_OBJ$, '$SPY$$ORIGINAL_METHOD$');&#10;});&#10;&#10;afterEach(() =&gt; {&#10;  $SPY$.restore();&#10;});$END$" description="Build a test setup and tear down" toReformat="true" toShortenFQNames="true">
+    <variable name="SPY" expression="" defaultValue="nameOfSpy" alwaysStopAt="true" />
+    <variable name="SPY_OBJ" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ORIGINAL_METHOD" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="utt" value="import { React, chai, expect, shallow, sinon } from 'base/test';&#10;import $COMPT$ from './$COMPT$';&#10;&#10;describe('$COMPT$', () =&gt; {&#10;  let wrapper;&#10;&#10;  beforeEach(() =&gt; {&#10;    wrapper = shallow(&lt;$COMPT$ /&gt;);&#10;  });&#10;&#10;  afterEach(() =&gt; {&#10;    wrapper.unmount();&#10;  });&#10;&#10;  it('should be defined', () =&gt; {&#10;    return expect(wrapper).to.not.be.undefined;&#10;  });&#10;});&#10;" description="A template for a unit test" toReformat="true" toShortenFQNames="true">
+    <variable name="COMPT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="tsvc" value="import { expect } from 'chai';&#10;import sinon from 'sinon';&#10;import $SVC$ from './$SVC$';&#10;&#10;describe('$SVC$', () =&gt; {&#10;    $END$&#10;});&#10;" description="Test file setup for service" toReformat="false" toShortenFQNames="true">
+    <variable name="SVC" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="fake" value="$STUB$ = sinon.stub($SERVICE$, '$STUB$');&#10;$END$" description="Create a test double" toReformat="false" toShortenFQNames="true">
+    <variable name="STUB" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SERVICE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>
