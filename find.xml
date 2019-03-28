@@ -31,7 +31,7 @@
     <mask>*.scss</mask>
     <mask>*.jsx</mask>
     <mask>*.js</mask>
-    <mask>*.jsp*</mask>
     <mask>*.js*</mask>
+    <mask>*.jsp*</mask>
   </component>
 </application>
