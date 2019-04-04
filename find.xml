@@ -3,6 +3,7 @@
     <option name="customScope" value="all-client-src" />
     <option name="defaultScopeName" value="all-client-src" />
     <option name="SEARCH_SCOPE" value="all-client-src" />
+    <option name="FILE_MASK" value="*.js*" />
     <mask>*.as</mask>
     <mask>*.mxml</mask>
     <mask>*.jspf</mask>
@@ -31,7 +32,7 @@
     <mask>*.scss</mask>
     <mask>*.jsx</mask>
     <mask>*.js</mask>
-    <mask>*.js*</mask>
     <mask>*.jsp*</mask>
+    <mask>*.js*</mask>
   </component>
 </application>
