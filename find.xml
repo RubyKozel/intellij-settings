@@ -2,6 +2,8 @@
   <component name="FindSettings">
     <option name="customScope" value="all-client-src" />
     <option name="defaultScopeName" value="all-client-src" />
+    <option name="localRegularExpressions" value="true" />
+    <option name="LOCAL_REGULAR_EXPRESSIONS" value="true" />
     <option name="SEARCH_SCOPE" value="all-client-src" />
     <option name="FILE_MASK" value="*.js*" />
     <mask>*.as</mask>
