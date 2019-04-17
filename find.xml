@@ -2,6 +2,8 @@
   <component name="FindSettings">
     <option name="customScope" value="all-client-src" />
     <option name="defaultScopeName" value="all-client-src" />
+    <option name="regularExpressions" value="true" />
+    <option name="REGULAR_EXPRESSIONS" value="true" />
     <option name="SEARCH_SCOPE" value="all-client-src" />
     <mask>*.mxml</mask>
     <mask>*.jspf</mask>
