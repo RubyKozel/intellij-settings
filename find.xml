@@ -5,7 +5,6 @@
     <option name="localRegularExpressions" value="true" />
     <option name="LOCAL_REGULAR_EXPRESSIONS" value="true" />
     <option name="SEARCH_SCOPE" value="all-client-src" />
-    <option name="FILE_MASK" value="*.js*" />
     <mask>*.jspf</mask>
     <mask>*.java</mask>
     <mask>*.test.js</mask>
