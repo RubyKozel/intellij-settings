@@ -3,7 +3,6 @@
     <option name="customScope" value="All Places" />
     <option name="defaultScopeName" value="All Places" />
     <option name="SEARCH_SCOPE" value="All Places" />
-    <mask>*.jspf</mask>
     <mask>*.java</mask>
     <mask>*.test.js</mask>
     <mask>*.css</mask>
@@ -33,5 +32,6 @@
     <mask>*.scss</mask>
     <mask>*.*css</mask>
     <mask>*.js*</mask>
+    <mask>*.proper*</mask>
   </component>
 </application>
