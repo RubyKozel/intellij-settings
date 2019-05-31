@@ -1,9 +1,12 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="all-client-src" />
-    <option name="defaultScopeName" value="all-client-src" />
-    <option name="SEARCH_SCOPE" value="all-client-src" />
-    <mask>*.java</mask>
+    <option name="customScope" value="All Places" />
+    <option name="defaultScopeName" value="All Places" />
+    <option name="SEARCH_SCOPE" value="All Places" />
+    <option name="FILE_MASK" value="*.java" />
+    <mask>*.as</mask>
+    <mask>*.mxml</mask>
+    <mask>*.jspf</mask>
     <mask>*.test.js</mask>
     <mask>*.css</mask>
     <mask>*gradle</mask>
@@ -24,14 +27,12 @@
     <mask>*build*</mask>
     <mask>*README*.*</mask>
     <mask>*.prop*</mask>
-    <mask>*.jsx</mask>
-    <mask>*.jsp*</mask>
-    <mask>*.gradle</mask>
-    <mask>*service*.js</mask>
-    <mask>*.scss</mask>
     <mask>*.*css</mask>
-    <mask>*.js*</mask>
-    <mask>*.proper*</mask>
+    <mask>*.scss</mask>
+    <mask>*.jsx</mask>
     <mask>*.js</mask>
+    <mask>*.jsp*</mask>
+    <mask>*.js*</mask>
+    <mask>*.java</mask>
   </component>
 </application>
