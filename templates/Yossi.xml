@@ -27,62 +27,6 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="apppost" value="app.post('', async (req, res) =&gt; {&#10;  &#10;});" description="Express app.post()" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="ACTION_SCRIPT" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CSS" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="ECMAScript6" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GSP" value="false" />
-      <option name="HAML" value="false" />
-      <option name="HTML" value="false" />
-      <option name="Handlebars" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="MXML" value="false" />
-      <option name="OGNL" value="false" />
-      <option name="OTHER" value="true" />
-      <option name="REQUEST" value="false" />
-      <option name="SQL" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="XML" value="false" />
-    </context>
-  </template>
-  <template name="rs" value="res.send();" description="Express res.send()" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="ACTION_SCRIPT" value="false" />
-      <option name="ASPECTJ" value="false" />
-      <option name="CSS" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="ColdFusion" value="false" />
-      <option name="ECMAScript6" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GSP" value="false" />
-      <option name="HAML" value="false" />
-      <option name="HTML" value="false" />
-      <option name="Handlebars" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JSP" value="false" />
-      <option name="KOTLIN" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="MXML" value="false" />
-      <option name="OGNL" value="false" />
-      <option name="OTHER" value="true" />
-      <option name="REQUEST" value="false" />
-      <option name="SQL" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="XML" value="false" />
-    </context>
-  </template>
   <template name="fethen" value="fetch('').then((response) =&gt; {&#10;  response&#10;});" description="fetch.then()" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="ACTION_SCRIPT" value="false" />
@@ -140,6 +84,34 @@
     </context>
   </template>
   <template name="expressapp" value="const express = require('express');&#10;&#10;const app = express();&#10;const port = process.env.PORT || 5000;&#10;&#10;app.use(express.json());&#10;&#10;app.listen(port, () =&gt; {&#10;  console.log(`Sever is up on port ${port}`);&#10;});" description="Express new app init" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="ACTION_SCRIPT" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="ECMAScript6" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="Handlebars" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="JSP" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="MXML" value="false" />
+      <option name="OGNL" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="REQUEST" value="false" />
+      <option name="SQL" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="trycatch" value="try {&#10;  &#10;} catch (e) {&#10;  &#10;}" description="try and catch" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="ACTION_SCRIPT" value="false" />
       <option name="ASPECTJ" value="false" />
