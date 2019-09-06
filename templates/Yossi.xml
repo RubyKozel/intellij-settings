@@ -55,7 +55,7 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="thenc" value="then((result) =&gt; {&#10;  &#10;}).catch((error) =&gt; {&#10;  res.status(400).send(error);&#10;});" description="then.()catch()" toReformat="false" toShortenFQNames="true">
+  <template name="thenc" value="then((result) =&gt; {&#10;  &#10;}).catch((error) =&gt; {&#10;  &#10;});" description="then.()catch()" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="ACTION_SCRIPT" value="false" />
       <option name="ASPECTJ" value="false" />
@@ -165,6 +165,12 @@
       <option name="SQL" value="false" />
       <option name="TypeScript" value="false" />
       <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="rnsc" value="import React from 'react';&#10;import { View } from 'react-native';&#10;&#10;const $TM_FILENAME_BASE$ = () =&gt; {&#10; return (&#10;  &lt;View&gt;&#10;   $END$&#10;  &lt;/View&gt;&#10; );&#10;};&#10;&#10;export default $TM_FILENAME_BASE$;" description="Creates a stateless React Native component without PropTypes and ES6 module system" toReformat="false" toShortenFQNames="true">
+    <variable name="TM_FILENAME_BASE" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
 </templateSet>
