@@ -3,16 +3,12 @@
     <variable name="STATE" expression="" defaultValue="&quot;do this to that&quot;" alwaysStopAt="true" />
     <variable name="ASYNC" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="DART" value="false" />
-      <option name="JADE" value="false" />
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
   <template name="desc" value="describe('$TESTNAME$', () =&gt; {&#10;    $END$&#10;});" description="Mocha 'describe' function" toReformat="false" toShortenFQNames="true">
     <variable name="TESTNAME" expression="" defaultValue="&quot;New test&quot;" alwaysStopAt="true" />
     <context>
-      <option name="DART" value="false" />
-      <option name="JADE" value="false" />
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
