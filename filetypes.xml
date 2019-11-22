@@ -1,6 +1,9 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
+      <mapping pattern="i18n-en.json" type="JSON" />
+      <mapping pattern="i18n-de" type="JSON" />
+      <mapping pattern="i18n-en" type="JSON5" />
       <mapping pattern="ImageScreen" type="JavaScript" />
       <mapping pattern="heb.properties" type="PLAIN_TEXT" />
       <mapping ext="dmp" type="PLAIN_TEXT" />
