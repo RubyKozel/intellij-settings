@@ -7,17 +7,15 @@
       <mapping pattern="ImageScreen" type="JavaScript" />
       <mapping pattern="heb.properties" type="PLAIN_TEXT" />
       <mapping ext="dmp" type="PLAIN_TEXT" />
-      <mapping ext="map" type="PLAIN_TEXT" />
       <mapping ext="wtf" type="PLAIN_TEXT" />
-      <removed_mapping ext="cmd" approved="true" type="PLAIN_TEXT" />
+      <mapping ext="map" type="PLAIN_TEXT" />
       <removed_mapping ext="log" approved="true" type="PLAIN_TEXT" />
       <removed_mapping ext="bat" approved="true" type="PLAIN_TEXT" />
-      <removed_mapping ext="snakefile" approved="true" type="textmate" />
       <removed_mapping ext="log" approved="true" type="PLAIN_TEXT" />
-      <removed_mapping ext="bat" approved="true" type="PLAIN_TEXT" />
       <removed_mapping ext="dockerfile" approved="true" type="textmate" />
-      <removed_mapping ext="cmd" approved="true" type="PLAIN_TEXT" />
       <removed_mapping ext="makefile" approved="true" type="textmate" />
+      <removed_mapping ext="cmd" approved="true" type="PLAIN_TEXT" />
+      <removed_mapping ext="snakefile" approved="true" type="textmate" />
       <mapping ext="pl" type="Perl5 script" />
       <mapping pattern=".gitattributes" type="Git file" />
     </extensionMap>
